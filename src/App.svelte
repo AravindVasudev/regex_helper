@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
 
-    border: 0.1em solid #102E4A;
+    border: 0.1em solid #DD4B1A;
   }
 
   #expression > label {
@@ -31,7 +31,6 @@
     display: block;
     box-sizing: border-box;
     width: 100%;
-
     flex: 1;
 
     padding: 0.25em;
@@ -40,16 +39,14 @@
     font-family: 'Space Mono', monospace;
     font-weight: bold;
     font-size: 1em;
+    color: #FFEEDB;
     
-    background-color: #33A1FD;
-    border: 0.1em solid #102E4A;
+    background-color: #DD4B1A;
   }
 
   #expression > input {
-    display: block;
     width: 100%;
     box-sizing: border-box;
-
     flex: 1;
 
     font-family: 'Space Mono', monospace;
@@ -59,23 +56,24 @@
     padding-left: 0.5em;
     padding-right: 0.5em;
     border: 0;
+
+    background-color: #FFEEDB;
   }
 
   #divider {
     height: 1em;
     width: 100%;
-
     flex: 0.25;
 
-    background-color: #102E4A;
+    background-color: #DD4B1A;
   }
 
   #example {
-    min-height: 70%;
     width: 100%;
     box-sizing: border-box;
-
     flex: 10;
+
+    background-color: #FFEEDB;
   }
 
   #expression > input:focus,
