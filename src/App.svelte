@@ -1,6 +1,10 @@
 <script lang="ts">
   let expression = "";
-  let examples = [""];
+  let example = "";
+
+  $: if (example && expression && example.match(expression)) {
+    console.log("match");
+  }
 </script>
 
 <main>
@@ -9,14 +13,14 @@
   <input type="text" bind:value={expression} placeholder="Enter regex here..." />
 </div>
 <div id="divider"></div>
-<textarea name="example" id="example" cols="30" rows="10"></textarea>
+<textarea name="example" id="example" bind:value={example}></textarea>
 </main>
 
 <style>
   main {
     /* Center the frame. */
-    height: 100vh;
-    width: 80%;
+    height: 80vh;
+    width: 80vw;
     box-sizing: border-box;
 
     margin: auto;
@@ -74,6 +78,8 @@
     flex: 10;
 
     background-color: #FFEEDB;
+
+    font-family: 'Space Mono', monospace;
   }
 
   #expression > input:focus,

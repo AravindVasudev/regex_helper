@@ -8,5 +8,9 @@ html, body {
   margin: 0;
   padding: 0;
 
-  background: #D0CCD0;
+  background: linear-gradient(90deg, rgba(255,238,219,1) 0%, rgba(255,207,153,1) 50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
