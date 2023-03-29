@@ -10,9 +10,13 @@
 
   // Add highlights within the text area.
   function highlight() {
+    if (!expression) {
+      return;
+    }
+
     let highlight = example
       .replace(/\n$/g, "\n\n")
-      .replace(/[A-Z].*?\b/g, "<mark>$&</mark>");
+      .replace(new RegExp(expression, "g"), "<mark>$&</mark>");
 
     highlightDiv.innerHTML = highlight;
   }
