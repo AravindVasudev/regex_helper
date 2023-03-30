@@ -3,14 +3,14 @@
 # Regex Helper
 
 ## What?
-The tool simply highlights regex matches from your expression.
+A simple tool that highlights your regular expression matches.
 
 ## Why?
-A lot of online tools store your test data; makes them unusable with corp data.
+A lot of online tools store your data; making them unusable with sensitive data.
 This tool does the most basic version of helping you validate your regex. It's
 frontend all the way down!
 
-Also, the whole implementation is a single svelte component so if you don't me,
+Also, the whole implementation is a single svelte component so if you don't trust me,
 spend 10 minutes skimming through the source and deploying it yourself.
 
 ## How?
