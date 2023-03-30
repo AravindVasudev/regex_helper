@@ -34,6 +34,7 @@
     <input
       type="text"
       bind:value={expression}
+      on:input={highlight}
       placeholder="Enter regex here..."
     />
   </div>
